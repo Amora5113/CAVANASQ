@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+@import "tailwindcss";
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: rgba(191, 211, 223);
+}
+
+.manrope {
+font-family: "Manrope", sans-serif;
+font-weight: 100;
+}
+
+.gridprincipal{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  font-weight: 700;
+  font-optical-sizing: auto;
+  
+}
+
+
+
+
+
+/*
+.hero {
+  background-position: 70% center;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-position: 85% center;
+  }
+}
+// <weight>: Use a value from 100 to 700
+// <uniquifier>: Use a unique and descriptive class name
+
+Josefin Sans
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
+
+// <weight>: Use a value from 200 to 800
+// <uniquifier>: Use a unique and descriptive class name
+
+.manrope-<uniquifier> {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+*/

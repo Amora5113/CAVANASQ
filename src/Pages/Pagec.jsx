@@ -95,7 +95,7 @@ const Pagec = () => {
 
             {/* BOTÓN */}
             <a
-              href="/REVISTACAVANA.pdf"
+              href={`${import.meta.env.BASE_URL}REVISTACAVANA.pdf`}
               download
               className="relative z-30 inline-flex items-center gap-3
                         mt-15 bg-blue-900 hover:bg-blue-950

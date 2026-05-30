@@ -22,15 +22,6 @@ const headbarRedes = [
 ]
 
 const Pagea = () => {
-  
-  {/* Background */}
-  const bgImagen = {
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center", 
-    backgroundSize: "cover",
-    position: "relative"
-  }
-  
 
   const [isOpen, setIsOpen] = useState(false)
 
@@ -65,10 +56,10 @@ const Pagea = () => {
     ></div>
 
     {/* CONTENIDO */}
-    <div className='relative z-10 min-h-screen md:pb-22.5'>
+    <div className='relative z-9999 min-h-screen pt-20 md:pt-30 md:pb-22.5'>
 
       {/* HEADBAR */}
-      <nav className="fixed flex justify-between items-center top-0 left-0 bg-white/30 w-full backdrop-blur-md z-50 ">
+      <nav className="fixed flex justify-between items-center top-0 left-0 bg-white/30 w-full backdrop-blur-md z-50">
         {/* Logo Headbar */}
         <div className='items-center align-middle p-6'>
           <img src={Logo} alt='Logo del sitio' className='w-80'/>
@@ -232,10 +223,11 @@ const Pagea = () => {
                   ))}
                 </ul>
           </div>
+
       </nav>
       
-        <div className='bg-blue-950 text-white text-center flex justify-between align-middle items-center gridprincipal 
-        sm:px-8 sm:py-4 px-4 py-2 sm:pl-2 sm:pr-2 pl-2 pr-2'>
+      <div className='relative bg-blue-950 text-white text-center flex justify-between align-middle items-center gridprincipal 
+        sm:px-8 sm:py-4 px-4 py-2 sm:pl-2 sm:pr-2 pl-2 pr-2 '>
             
           {/* div vacio */}
             <div className='border-l border-l/100'></div>
@@ -271,6 +263,7 @@ const Pagea = () => {
             <div className='border-r border-r/100'></div>
 
         </div> 
+        
       </div>
     </section>
   )

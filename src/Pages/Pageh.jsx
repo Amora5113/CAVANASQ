@@ -2,7 +2,6 @@ import { useRef } from "react";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 import c1 from "../Assets/Img/a.webp";
-import c2 from "../Assets/Img/b.webp";
 import c3 from "../Assets/Img/c.webp";
 import c4 from "../Assets/Img/d.webp";
 import c5 from "../Assets/Img/e.webp";
@@ -17,7 +16,6 @@ import iconCheck from "../Assets/Imgx/comprobado.webp";
 
 const galleryImages = [
   c3,
-  c2,
   c5,
   c4,
   c7,
@@ -178,32 +176,62 @@ export default function Pageh() {
               </ul>
             </div>
 
-            <a
-              href={`https://wa.me/526161070699?text=${encodeURIComponent(
-                `Hola, me interesa agendar una visita al proyecto CAVANA. 
-                Me gustaría conocer disponibilidad, costos y características de las bodegas industriales.`
-              )}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="
-                bg-blue-500
-                hover:bg-blue-900
-                transition-all
-                duration-300
-                text-white
-                font-semibold
-                px-10
-                py-4
-                rounded-xl
-                shadow-lg
-                whitespace-nowrap
-                inline-flex
-                items-center
-                justify-center
-              "
-            >
-              Agendar Visita
-            </a>
+            <div className="flex flex-col gap-4 items-center">
+
+              {/* BOTÓN NUEVO */}
+              <a
+                href="https://www.sanquintinm2.com/property/en-renta-4-bodegas-industriales-de-510m2-en-parque-privado-con-seguridad-24-7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                  bg-gray-500
+                  hover:bg-gray-400
+                  transition-all
+                  duration-300
+                  text-white
+                  font-semibold
+                  px-12
+                  py-4
+                  rounded-xl
+                  shadow-lg
+                  whitespace-nowrap
+                  inline-flex
+                  items-center
+                  justify-center
+                "
+              >
+                Visualízanos
+              </a>
+
+              {/* BOTÓN WHATSAPP */}
+              <a
+                href={`https://wa.me/526161070699?text=${encodeURIComponent(
+                  `Hola, me interesa agendar una visita al proyecto CAVANA. 
+                  Me gustaría conocer disponibilidad, costos y características de las bodegas industriales.`
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                  bg-blue-500
+                  hover:bg-blue-900
+                  transition-all
+                  duration-300
+                  text-white
+                  font-semibold
+                  px-10
+                  py-4
+                  rounded-xl
+                  shadow-lg
+                  whitespace-nowrap
+                  inline-flex
+                  items-center
+                  justify-center
+                "
+              >
+                Agendar Visita
+              </a>
+
+            </div>
           </div>
         </div>
       </div>

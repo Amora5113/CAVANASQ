@@ -56,13 +56,13 @@ ${formData.mensaje}
               className="w-160"
             />
 
-            <p className="text-[20px] leading-loose text-gray-200 max-w-100 text-justify">
+            <p className="text-[16px] leading-loose text-gray-200 max-w-100 text-justify">
               Proyecto privado diseñado para empresas que
               buscan espacios industriales modernos y
               funcionales.
             </p>
 
-            <p className="text-[20px] leading-loose text-gray-200 mt-4 max-w-100">
+            <p className="text-[16px] leading-loose text-gray-200 mt-4 max-w-100">
               Solo 4 bodegas disponibles en etapa de
               lanzamiento.
             </p>

@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import Logo from "../Assets/Logos/Logooficial.png"
 import Fondo from "../Assets/Img/c.webp"
+import Fondomobile from "../Assets/Img/fm.webp"
 
 
 const headbarRedes = [
@@ -24,11 +25,10 @@ const Pagea = () => {
   
   {/* Background */}
   const bgImagen = {
-    backgroundImage: `url(${Fondo })`,
     backgroundRepeat: "no-repeat",
-    backgroundPosition: "bottom", 
+    backgroundPosition: "center", 
     backgroundSize: "cover",
-    position: "relative"  
+    position: "relative"
   }
   
 
@@ -40,8 +40,33 @@ const Pagea = () => {
 
 
   return (
-    <section className='mt-0 overflow-hidden min-h-screen' style={bgImagen}>
-      
+  <section className='relative overflow-hidden min-h-screen'>
+
+    {/* BACKGROUND DESKTOP */}
+    <div
+      className='hidden md:block absolute inset-0 z-0'
+      style={{
+        backgroundImage: `url(${Fondo})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+      }}
+    ></div>
+
+    {/* BACKGROUND MOBILE */}
+    <div
+      className='block md:hidden absolute inset-0 z-0'
+      style={{
+        backgroundImage: `url(${Fondomobile})`,
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "center",
+        backgroundSize: "cover",
+      }}
+    ></div>
+
+    {/* CONTENIDO */}
+    <div className='relative z-10 min-h-screen md:pb-22.5'>
+
       {/* HEADBAR */}
       <nav className="fixed flex justify-between items-center top-0 left-0 bg-white/30 w-full backdrop-blur-md z-50 ">
         {/* Logo Headbar */}
@@ -246,6 +271,7 @@ const Pagea = () => {
             <div className='border-r border-r/100'></div>
 
         </div> 
+      </div>
     </section>
   )
 }

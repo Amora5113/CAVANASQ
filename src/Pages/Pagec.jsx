@@ -2,7 +2,7 @@ import Bodega from "../Assets/Img/rsf.webp"
 
 
 const caracteristicasIzquierda = [
-  "500 m² de área operativa",
+  "510 m² de área operativa",
   "6 m de altura libre",
   "Estructura metálica industrial",
   "Piso de alto desempeño",
@@ -20,17 +20,47 @@ const caracteristicasDerecha = [
 
 const Pagec = () => {
   return (
-    <section className="bg-linear-to-r from-blue-900 to-blue-300/80 relative mx-auto  min-h-130 overflow-hidden">
+    <section className="bg-blue-950 relative mx-auto  min-h-130 overflow-hidden -mt-px">
 
+      <div className="bg-white h-20 -mt-px"/>
 
+      
         {/* Contenido Izquierdo */}
         <div className="relative z-10 grid md:grid-cols-2 items-center h-full pl-1 pr-1">
           <div className="relative flex items-end h-full">
 
             {/* Caja superior */}
             <div className="absolute top-0 left-10 md:left-20 z-20">
+              
+              <div className="
+                -top-10
+                left-5
+                md:left-10
+                bg-gray-300
+                border-2
+                border-gray-300
+                px-10
+                py-10
+                shadow-[0_20px_50px_rgba(0,0,0,0.30)]
+                relative
+                z-20
+              ">
+                {/* TRIÁNGULO EXTERIOR */}
+                <div
+                  className="
+                    absolute
+                    top-0
+                    -right-8
+                    w-0
+                    h-0
+                    border-r-30
+                    border-r-transparent
+                    border-b-40
+                    border-b-gray-400/40
+                    -z-10
+                  "
+                ></div>
 
-              <div className="relative bg-gray-300 px-5 py-5 shadow-lg">
                 <h3 className="text-blue-950 text-center uppercase text-lg leading-none">
                   4 Bodegas
                 </h3>
@@ -38,15 +68,16 @@ const Pagec = () => {
                   DE
                 </p>
                 <h1 className="text-blue-950 font-bold text-5xl leading-none mt-1">
-                  500 m²
-                </h1>
+                  510 m²
+                </h1> 
               </div>
+             
             </div>
             {/* Imagen */}
             <img
               src={Bodega}
               alt="Bodega Industrial"
-              className="w-max object-contain rounded-r-2xl pt-50 relative z-10"
+              className="w-max object-contain rounded-r-2xl pt-50 relative z-10 block"
             />
             
           </div>
@@ -54,11 +85,11 @@ const Pagec = () => {
           {/* CONTENIDO DERECHO */}
           <div className="relative z-20 px-8 md:px-0 py-18 ">
 
-            <h1 className="text-blue-950 font-bold leading-tight text-[clamp(2rem,3vw,3.5rem)]">
+            <h1 className="text-gray-400 font-bold leading-tight text-[clamp(2rem,3vw,3.5rem)]">
               Infraestructura Industrial Moderna
             </h1>
 
-            <h2 className="text-blue-950 mt-8 text-[clamp(22px,1vw,24px)]">
+            <h2 className="text-gray-400 mt-8 text-[clamp(22px,1vw,24px)]">
               Primera Etapa <span className="mx-3">|</span> 4 Unidades Exclusivas
             </h2>
 
@@ -95,16 +126,16 @@ const Pagec = () => {
 
             {/* BOTÓN */}
             <a
-              href={`${import.meta.env.BASE_URL}REVISTACAVANA.pdf`}
+              href={`${import.meta.env.BASE_URL}CAVANAMICROPARQUEINDUSTRIAL.pdf`}
               download
-              className="relative z-30 inline-flex items-center gap-3
-                        mt-15 bg-blue-900 hover:bg-blue-950
+              className="relative z-30 inline-flex items-center gap-2
+                        mt-15 bg-gray-300 hover:bg-gray-200
                         hover:scale-105 active:scale-95
                         transition-all duration-300
-                        text-white text-center px-10 py-4 rounded-md shadow-lg
+                        text-blue-950 text-center px-10 py-4 rounded-md shadow-lg
                         text-[clamp(18px,1vw,21px)]"
             >
-              Solicitar Información Ejecutiva
+              Descargar Información Ejecutiva
             </a>
 
           </div>

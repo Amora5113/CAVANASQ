@@ -4,6 +4,7 @@ import Logistica from "../Assets/Imgx/logistica.webp"
 import Almacen from "../Assets/Imgx/almacen.webp"
 import Transporte from "../Assets/Imgx/transporte.webp"
 import Logo from "../Assets/Logos/mpigris.png"
+import Cavana from "../Assets/Logos/cavanagris.svg"
 
 const sectores = [
   {
@@ -48,10 +49,11 @@ const Pageb = () => {
 
           <div className="max-w-md">
 
-            <h1 className="text-white font-bold uppercase tracking-wide text-[clamp(2rem,4vw,3.5rem)] leading-none">
-              Cavana
-            </h1>
-
+            {/* Imagen inferior */}
+            <div className="mt-5 flex  uppercase tracking-wide leading-none">
+              <img src={Cavana} alt="LogoGris" className="w-100 object-contain"/>
+            </div>
+          
             <h2 className="text-white font-semibold uppercase text-[clamp(1rem,1.5vw,1.3rem)] mt-2">
               Desarrollo Industrial Privado
             </h2>
@@ -89,7 +91,7 @@ const Pageb = () => {
               <div key={item.id} className="w-[40%] md:w-40 flex flex-col items-center text-center group">
 
                 {/* Imagen */}
-                <div className="w-35 h-35 rounded-3xl overflow-hidden shadow-lg transition-all duration-500 group-hover:scale-105">
+                <div className="w-35 h-35 rounded-3xl overflow-hidden shadow-lg transition-all duration-100 group-hover:scale-105">
                   <img src={item.img} alt={item.title} className="w-full h-full object-cover"/>
                 </div>
 

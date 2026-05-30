@@ -34,8 +34,8 @@ const Paged = () => {
             href="https://maps.google.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-5 bg-white
-                       hover:bg-gray-300
+            className="mt-5 bg-gray-300
+                       hover:bg-gray-200
                        hover:scale-105
                        active:scale-95
                        transition-all duration-300

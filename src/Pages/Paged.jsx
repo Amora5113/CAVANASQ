@@ -31,7 +31,7 @@ const Paged = () => {
 
           {/* BOTÓN */}
           <a
-            href="https://maps.google.com"
+            href="https://www.google.com/maps/@30.6660437,-115.9736927,19z?authuser=0&entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-5 bg-gray-300
